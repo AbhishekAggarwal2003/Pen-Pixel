@@ -42,12 +42,19 @@ python manage.py runserver
 ## Project Structure
 
 blogging-platform/
+
 │── myproject/     # Main Django project directory
+
 │── myapp/         # Blog application
+
 │── media/         # Images
+
 │── templates/     # HTML templates
+
 │── static/        # Static files (CSS, JS, images)
+
 │── db.sqlite3     # SQLite database (or MySQL if configured)
+
 │── manage.py      # Django management script
 
 
