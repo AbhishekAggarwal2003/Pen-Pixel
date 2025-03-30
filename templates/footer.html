@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .footer-container {
+      background-color: #222;
+      color: #fff;
+      padding: 60px 0 30px;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 0 20px;
+    }
+    
+    .footer-section h3 {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .footer-section h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 380px;
+      height: 2px;
+      background-color: #6a11cb;
+    }
+    
+    .footer-section p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #b9b9b9;
+      font-size: 14px;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+    
+    .footer-links a {
+      color: #b9b9b9;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+    
+    .footer-links a:hover {
+      color: #6a11cb;
+      padding-left: 5px;
+    }
+    
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      color: #b9b9b9;
+      font-size: 14px;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 50px;
+      margin-top: 20px;
+      margin-left: 79px;
+    }
+    
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .social-links a:hover {
+      background-color: #6a11cb;
+      transform: translateY(-3px);
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      color: #b9b9b9;
+      font-size: 14px;
+    }
+    
+    .footer-bottom a {
+      color: #6a11cb;
+      text-decoration: none;
+    }
+    
+    @media screen and (max-width: 992px) {
+      .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media screen and (max-width: 576px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-section h3 {
+        text-align: center;
+      }
+      
+      .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .footer-links li, .contact-info {
+        text-align: center;
+      }
+      
+      .social-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <footer class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Welcome to Pen&Pixel, your go-to platform for insightful articles and creative storytelling. At Pen&Pixel, we empower writers, thinkers, and creators to share their ideas with the world. Whether you're passionate about technology, travel, education, or AI, our platform provides a space to express, explore, and engage with like-minded individuals. Join us in building a vibrant community where every story matters.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/abhishek--aggarwal/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek--aggarwal/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek--aggarwal/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Bidholi, Dehradun</p>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <p>+91 8859035304</p>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-envelope"></i>
+          <p>abhishekaggarwal992744@gmail.com</p>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-clock"></i>
+          <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pen&Pixel. All Rights Reserved | Designed by <a href="https://www.linkedin.com/in/abhishek--aggarwal/">Abhishek Aggarwal</a></p>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>

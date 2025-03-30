@@ -1,0 +1,130 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    }
+    
+    .category-badge {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+    
+    .blog-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(106, 17, 203, 0.1);
+    }
+    
+    .blog-card img {
+      height: 240px;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    .blog-card-content {
+      padding: 1.5rem;
+    }
+    
+    .like-btn {
+      border: none;
+      background: transparent;
+      transition: transform 0.2s ease;
+    }
+    
+    .like-btn:hover {
+      transform: scale(1.2);
+    }
+    
+    .section-title {
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 4px;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      border-radius: 2px;
+    }
+    
+    .carousel {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
+    }
+    
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+    
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    
+    .carousel-caption h1 {
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    
+    .view-all-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #6a11cb;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .view-all-link:hover {
+      transform: translateX(5px);
+      color: #2575fc;
+    }
+    
+    .popular-post {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .popular-post:last-child {
+      border-bottom: none;
+    }
+    
+    .time-stamp {
+      font-size: 0.8rem;
+      color: #6a11cb;
+      font-weight: 500;
+    }

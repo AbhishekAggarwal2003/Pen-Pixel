@@ -1,0 +1,79 @@
+<!-- ***** Preloader Start ***** -->
+<div id="preloader">
+  <div class="jumper">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- ***** Preloader End ***** -->
+
+<!-- Header -->
+<header class="mb-4">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <h2 class="m-0 fw-bold">Pen&<span style="color: #6a11cb;">Pixel</span></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="{% url 'index' %}">
+              <i class="fas fa-home me-1"></i> Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="{% url 'blog' %}">
+              <i class="fas fa-blog me-1"></i> Blogs
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="{% url 'contact' %}">
+              <i class="fas fa-envelope me-1"></i> Contact
+            </a>
+          </li>
+
+          {% if user.is_authenticated %}
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="{% url 'create' %}">
+              <i class="fas fa-pen-to-square me-1"></i> Create
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="{% url 'profile' user.id %}">
+              <i class="fas fa-user me-1"></i> Profile
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="{% url 'logout' %}" style="color: #6a11cb;">
+              <i class="fas fa-sign-out-alt me-1"></i> Logout
+            </a>
+          </li>
+          {% else %}
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium btn login-btn px-4 py-2 text-white" href="{% url 'signin' %}" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+              <i class="fas fa-sign-in-alt me-1"></i> Login
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="main-banner header-text">
+  <div class="container-fluid">
+    <div class="owl-banner owl-carousel">
+      <!-- Banner content will go here -->
+    </div>
+  </div>
+</div>
+<!-- Banner Ends Here -->

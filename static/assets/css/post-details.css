@@ -1,0 +1,345 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styling from previous page */
+  .navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+  }
+  
+  .navbar-brand h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 1.8rem;
+  }
+  
+  .navbar-brand span {
+    color: #6a11cb;
+    font-weight: 700;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #6a11cb;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #6a11cb;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link.text-primary {
+    color: #6a11cb !important;
+  }
+  
+  /* Blog post content styling */
+  .blog-posts {
+    padding: 60px 0;
+  }
+  
+  .blog-post {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-thumb {
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .blog-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .blog-post:hover .blog-thumb img {
+    transform: scale(1.05);
+  }
+  
+  .down-content {
+    padding: 30px;
+  }
+  
+  .down-content span {
+    display: inline-block;
+    background-color: #6a11cb;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .down-content h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .post-info {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  .post-info li {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .post-info li a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-info li a:hover {
+    color: #6a11cb;
+  }
+  
+  .down-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Comments section */
+  .sidebar-item.comments {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+  }
+  
+  .sidebar-heading h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .sidebar-heading h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #6a11cb;
+  }
+  
+  .comments ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comments li {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+  }
+  
+  .comments li:last-child {
+    border-bottom: none;
+  }
+  
+  .comments h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .comments h5 span {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .comments p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  .delete-link {
+    color: #6a11cb;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Comment form */
+  .submit-comment {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  textarea {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 15px;
+    resize: vertical;
+    min-height: 120px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.1);
+  }
+  
+  .main-button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .main-button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    margin-top: 0;
+  }
+  
+  .sidebar-item {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+  }
+  
+  .recent-posts ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-posts li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .recent-posts li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .recent-posts li img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  .recent-posts li h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .recent-posts li a:hover h5 {
+    color: #6a11cb;
+  }
+  
+  .recent-posts li span {
+    font-size: 13px;
+    color: #999;
+    display: block;
+  }
+  
+  @media (max-width: 991px) {
+    .blog-thumb {
+      height: 300px;
+    }
+    
+    .sidebar {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .blog-posts {
+      padding: 30px 0;
+    }
+    
+    .blog-thumb {
+      height: 250px;
+    }
+    
+    .down-content {
+      padding: 20px;
+    }
+    
+    .down-content h4 {
+      font-size: 22px;
+    }
+  }

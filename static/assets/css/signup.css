@@ -1,0 +1,127 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.signup-container {
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.signup-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 520px;
+    position: relative;
+}
+
+.signup-header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 2.5rem 2rem 5rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+.signup-header h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup-header p {
+    opacity: 0.85;
+    font-weight: 300;
+}
+
+.signup-form {
+    padding: 2rem;
+    margin-top: -3rem;
+    background: white;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+}
+
+.form-floating {
+    margin-bottom: 1.5rem;
+}
+
+.form-floating input {
+    border-radius: 8px;
+    border: 1px solid #e1e5ea;
+    padding: 1rem 0.75rem;
+    height: 56px;
+}
+
+.form-floating input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.1);
+}
+
+.form-floating label {
+    padding: 1rem 0.75rem;
+}
+
+.signup-btn {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 0.875rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(135deg, #5a0cb1 0%, #1f65d8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.2);
+}
+
+.signup-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6c757d;
+}
+
+.signup-footer a {
+    color: #6a11cb;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.signup-footer a:hover {
+    color: #2575fc;
+    text-decoration: underline;
+}
+
+.alert {
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .signup-card {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .signup-container {
+        padding: 0;
+    }
+    
+    .signup-header {
+        padding: 2rem 1.5rem 5rem 1.5rem;
+    }
+    
+    .signup-form {
+        padding: 1.5rem;
+    }
+}
