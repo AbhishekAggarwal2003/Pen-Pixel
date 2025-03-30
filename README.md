@@ -22,11 +22,17 @@ Secure and scalable
 Clone the repository in your system first then run the following command
 
 python -m venv env
+
 .\env\Scripts\activate
+
 pip install -r requirements.txt
+
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py createsuperuser
+
 python manage.py runserver
 
 
